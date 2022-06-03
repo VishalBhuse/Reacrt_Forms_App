@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color: #042641;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  justify-content: space-around;
+}
+.App div{
+  margin-top: 15px;
+  padding: 20px;
+}
+.form input{
+margin-bottom: 10px;
+display: block;
+width: 100%;
+}
+.form button{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+.selectdepart{
+  width: 100%;
+  margin-bottom: 10px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left{
+  border-radius: 10px;
+}
+.sidedata input, select, button {
+  background: #9ebfd9;
+  outline: none;
+}
+.buttton{
+  font-size: 20px;font-weight: 600;
+}
+.buttton:hover{
+  background: #031320;
+  color: beige;
+
+}
+.table{
+  box-shadow: rgba(154, 154, 156, 0.808) 0px 5px 15px;
+  border-radius: 10px;
+  margin: 20px 5px;
+  color: #fff;
+}
+.table select{
+  margin: 20px 5px;
+  padding: 5px 10px;
+}
+.checkboxui{
+  width: 15px !important
 }
