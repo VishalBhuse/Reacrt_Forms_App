@@ -62,14 +62,14 @@ export const Table = (props) => {
   }, [props.limit,filter]);
 
   React.useEffect(() => {
-    if (sort === "ascending") {
+    if (sort === "asc") {
       userdata.sort((a, b) => a.Salary - b.Salary);
       console.log(userdata);
       setuserdata(userdata);
       setreload(Date.now());
     } 
     
-    else if (sort === "descending") {
+    else if (sort === "des") {
       userdata.sort((a, b) => b.Salary - a.Salary);
       console.log(userdata);
       setuserdata(userdata);
@@ -138,7 +138,7 @@ export const Table = (props) => {
                 <td>{item.Age}</td>
                 <td>{item.Address}</td>
                 <td>{item.Dept}</td>
-                <td>{item.Salary + " Rs."}</td>
+                <td>{item.Salary}</td>
                 <td>{item.MaritalState ? "Yes" : "No"}</td>
               </tr>
             );
