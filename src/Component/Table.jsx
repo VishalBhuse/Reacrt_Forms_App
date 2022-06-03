@@ -115,13 +115,13 @@ export const Table = (props) => {
         <tbody>
           {filterdata.map((item) => {
             return (
-              <tr>
+              <tr key={item.id}>
                 <td>
                   <i
                     onClick={() => {
                       removeitem(item.id);
                     }}
-                    class="bi bi-trash3-fill"
+                    className="bi bi-trash3-fill"
                     style={{
                       fontSize: "25px",
                       display: "flex",

@@ -5,7 +5,7 @@ export const Pagination = (props) => {
   const [pageup, setpageup] = React.useState(1);
 
   return (
-    <div class="btn-group d-flex justify-content-center">
+    <div className="btn-group d-flex justify-content-center">
       <button
         type="button"
         disabled={pageup <= 1}
@@ -16,13 +16,13 @@ export const Pagination = (props) => {
           }
         }}
         
-        class="btn btn-outline-info"
+        className="btn btn-outline-info"
       >
                   <ImArrowLeft style={{color:'#ffff',padding:"0px"}}/>
 
       </button>
 
-      <button type="button" disabled={true} class="btn btn-outline-info text-white">
+      <button type="button" disabled={true} className="btn btn-outline-info text-white">
         {props.page}
       </button>
       
@@ -33,7 +33,7 @@ export const Pagination = (props) => {
           props.setpage(pageup + 1);
           setpageup(pageup + 1);
         }}
-        class="btn btn-outline-info"
+        className="btn btn-outline-info"
       >
                   <ImArrowRight style={{color:'#ffff',padding:"0px"}}/>
       </button>
