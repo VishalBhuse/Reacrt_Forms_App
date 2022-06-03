@@ -138,7 +138,7 @@ export const Table = (props) => {
                 <td>{item.Age}</td>
                 <td>{item.Address}</td>
                 <td>{item.Dept}</td>
-                <td>{item.Salary}</td>
+                <td>{item.Salary} Rs.</td>
                 <td>{item.MaritalState ? "Yes" : "No"}</td>
               </tr>
             );
